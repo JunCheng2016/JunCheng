@@ -1,8 +1,9 @@
 package businesslogic;
 
+import businesslogicservice.StrategyService;
 import vo.StrategyVO;
 
-public class StrategyServiceImpl {
+public class StrategyServiceImpl implements StrategyService{
 
 	private StrategyVO StrategyVO;
 

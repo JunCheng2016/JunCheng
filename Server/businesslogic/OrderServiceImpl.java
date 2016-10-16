@@ -2,24 +2,26 @@ package businesslogic;
 
 import java.util.ArrayList;
 
+import businesslogicservice.OrderService;
 import po.OrderPO;
 import vo.OrderVO;
 
-public class OrderServiceImpl {
+public class OrderServiceImpl implements OrderService{
 	
 	private ArrayList<OrderVO> OrderVo;
 	private OrderVO OrderVO;
-	public ArrayList<OrderVO> getOrder(String type) {
-		if(type=="1"||type=="2"){
+	private OrderPO OrderPO;
+	public ArrayList<OrderVO> getOrder(OrderLimit limit) {
+		if(limit != null){
 			return OrderVo;
 		}else{
 			return null;
 		}
 	}	
 	
-	public OrderVO getInfo(String ID) {
+	public OrderPO getInfo(String ID) {
 		if(ID=="01"){
-			return OrderVO;
+			return OrderPO;
 		}else{
 			return null;
 		}

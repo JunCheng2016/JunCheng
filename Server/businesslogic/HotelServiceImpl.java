@@ -2,24 +2,26 @@ package businesslogic;
 
 import java.util.ArrayList;
 
+import businesslogicservice.HotelService;
 import po.HotelPO;
 import vo.HotelVO;
 import vo.MemberVO;
 import vo.UserVO;
 
-public class HotelServiceImpl {
+public class HotelServiceImpl implements HotelService{
 
-	public HotelPO getInfo(String name) {
-		HotelPO po=new HotelPO();
+	public HotelVO getInfo(String name) {
+		HotelVO vo=new HotelVO();
 		if(name=="001"){
-			return po;
+			return vo;
 		}else{
 			return null;
 		}
 	}
 	
-	public ArrayList<HotelVO> getHotel (ArrayList<HotelVO> limit) {
-		return limit;
+	public ArrayList<HotelVO> getHotel (HotelLimit limit) {
+		
+		return null;
 	}
 	
 	public ResultMessage modifyHotel(HotelPO po) {
@@ -39,5 +41,7 @@ public class HotelServiceImpl {
 		}
 		
 	}
+
+
 	
 }
