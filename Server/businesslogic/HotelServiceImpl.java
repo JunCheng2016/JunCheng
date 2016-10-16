@@ -26,7 +26,7 @@ public class HotelServiceImpl {
 		if(po!=null){
 			return ResultMessage.Success;
 		}else{
-			return ResultMessage.Fail;
+			return ResultMessage.Failure;
 		}
 		
 	}
@@ -35,7 +35,7 @@ public class HotelServiceImpl {
 		if(po != null){
 			return ResultMessage.Success;
 		}else{
-			return ResultMessage.Fail;
+			return ResultMessage.Failure;
 		}
 		
 	}

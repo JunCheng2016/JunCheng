@@ -29,7 +29,7 @@ public class OrderServiceImpl {
 		if(po!=null){
 			return ResultMessage.Success;
 		}else{
-			return ResultMessage.Fail;
+			return ResultMessage.Failure;
 		}
 	}
 
@@ -37,7 +37,7 @@ public class OrderServiceImpl {
 		if(vo!=null){
 			return ResultMessage.Success;
 		}else{
-			return ResultMessage.Fail;
+			return ResultMessage.Failure;
 		}
 	}
 

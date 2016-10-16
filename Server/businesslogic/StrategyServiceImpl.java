@@ -18,7 +18,7 @@ public class StrategyServiceImpl {
 		if(vo!=null){
 			return ResultMessage.Success;
 		}else{
-			return ResultMessage.Fail;
+			return ResultMessage.Failure;
 		}
 	}
 	
@@ -26,7 +26,7 @@ public class StrategyServiceImpl {
 		if(name!=null){
 			return ResultMessage.Success;
 		}else{
-			return ResultMessage.Fail;
+			return ResultMessage.Failure;
 		}
 	}
 	
