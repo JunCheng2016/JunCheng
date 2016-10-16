@@ -1,25 +1,43 @@
 package businesslogic;
 
+import java.util.ArrayList;
+
+import po.HotelPO;
 import vo.HotelVO;
 import vo.MemberVO;
 import vo.UserVO;
 
 public class HotelServiceImpl {
-	public ResultMessage addSales(UserVO vo) {
-		return null;
+
+	public HotelPO getInfo(String name) {
+		HotelPO po=new HotelPO();
+		if(name=="001"){
+			return po;
+		}else{
+			return null;
+		}
 	}
 	
-	public ResultMessage addHotel(HotelVO vo) {
-		return null;
+	public ArrayList<HotelVO> getHotel (ArrayList<HotelVO> limit) {
+		return limit;
 	}
 	
-	public ResultMessage addHotel(MemberVO vo,double money) {
-		return null;
+	public ResultMessage modifyHotel(HotelPO po) {
+		if(po!=null){
+			return ResultMessage.Success;
+		}else{
+			return ResultMessage.Fail;
+		}
+		
 	}
-	
-	public ResultMessage deposit(MemberVO vo,double money) {
-		return null;
+
+	public ResultMessage updateHotel(HotelPO po) {
+		if(po != null){
+			return ResultMessage.Success;
+		}else{
+			return ResultMessage.Fail;
+		}
+		
 	}
-	
 	
 }

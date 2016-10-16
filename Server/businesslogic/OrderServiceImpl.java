@@ -7,20 +7,38 @@ import vo.OrderVO;
 
 public class OrderServiceImpl {
 	
-	public ArrayList<OrderVO> getOrder(OrderLimit limit) {
-		return null;
+	private ArrayList<OrderVO> OrderVo;
+	private OrderVO OrderVO;
+	public ArrayList<OrderVO> getOrder(String type) {
+		if(type=="1"||type=="2"){
+			return OrderVo;
+		}else{
+			return null;
+		}
 	}	
 	
-	public OrderPO getInfo(String ID) {
-		return null;
+	public OrderVO getInfo(String ID) {
+		if(ID=="01"){
+			return OrderVO;
+		}else{
+			return null;
+		}
 	}
 	
 	public ResultMessage addOrder(OrderPO po) {
-		return null;
+		if(po!=null){
+			return ResultMessage.Success;
+		}else{
+			return ResultMessage.Fail;
+		}
 	}
 
 	public ResultMessage updateOrder(OrderVO vo) {
-		return null;
+		if(vo!=null){
+			return ResultMessage.Success;
+		}else{
+			return ResultMessage.Fail;
+		}
 	}
 
 }
