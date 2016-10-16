@@ -16,6 +16,4 @@ public interface HotelService {
 	public ResultMessage modifyHotel(HotelPO po);
 
 	public ResultMessage updateHotel(HotelPO po);
-
-	
 }

@@ -1,37 +1,54 @@
 package businesslogic;
 
+import java.util.ArrayList;
+
 import vo.HotelVO;
 import vo.MemberVO;
 import vo.UserVO;
 
 public class UserServiceImpl {
-
+	private ArrayList<UserVO> UserList=new ArrayList<UserVO>();
+	private ArrayList<HotelVO> HotelList=new ArrayList<HotelVO>();
 	public ResultMessage login(String Id,String password) {
-		return null;
+		if(Id=="0001"&&password=="012345"){
+			return ResultMessage.Success;
+		}
+		return ResultMessage.Failure;
 	}
 	
 	public UserVO getUserInfo(String type) {
-		return null;
+		switch(type){
+		case "Manager":
+			return new UserVO();
+		case "Customer":
+			return new UserVO();
+		case "Sales":
+			return new UserVO();
+		case "HotelWorker":
+			return new UserVO();
+		default:
+			return null; 
+		}
 	}
 	
 	public ResultMessage updateUser(String Id,UserVO vo) {
-		return null;
+		System.out.println("Update successfully!");
+		return ResultMessage.Success;
 	}
 	
 	public ResultMessage addSales(UserVO vo) {
-		return null;
+		UserList.add(vo);
+		return ResultMessage.Success;
 	}
 	
 	public ResultMessage addHotel(HotelVO vo) {
-		return null;
-	}
-	
-	public ResultMessage addHotel(MemberVO vo,double money) {
-		return null;
+		HotelList.add(vo);
+		return ResultMessage.Success;
 	}
 	
 	public ResultMessage deposit(MemberVO vo,double money) {
-		return null;
+		System.out.println("Bob has gain гд5");
+		return ResultMessage.Success;
 	}
 	
 }

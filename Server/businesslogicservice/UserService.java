@@ -19,8 +19,6 @@ public interface UserService {
 	
 	public ResultMessage addHotel(HotelVO vo);
 	
-	public ResultMessage addHotel(MemberVO vo,double money);
-	
 	public ResultMessage deposit(MemberVO vo,double money);
 	
 	

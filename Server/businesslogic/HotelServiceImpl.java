@@ -5,19 +5,6 @@ import vo.MemberVO;
 import vo.UserVO;
 
 public class HotelServiceImpl {
-
-	public ResultMessage login(String Id,String password) {
-		return null;
-	}
-	
-	public UserVO getUserInfo(String type) {
-		return null;
-	}
-	
-	public ResultMessage updateUser(String Id,UserVO vo) {
-		return null;
-	}
-	
 	public ResultMessage addSales(UserVO vo) {
 		return null;
 	}
