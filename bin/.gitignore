@@ -1,15 +1,2 @@
 /businesslogic/
-/data/
-/businesslogicservice/
-/blservice/
-/mainui/
-/hotelui/
-/driver/
-/Driver/
-/hotel_driver.class
-/member_driver.class
-/order_driver.class
-/strategy_driver.class
-/user_driver.class
 /bl_driver/
-/data_driver/

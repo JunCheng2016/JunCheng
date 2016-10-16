@@ -2,11 +2,12 @@ package businesslogic;
 
 import java.util.ArrayList;
 
+import businesslogicservice.UserService;
 import vo.HotelVO;
 import vo.MemberVO;
 import vo.UserVO;
 
-public class UserServiceImpl {
+public class UserServiceImpl implements UserService{
 	private ArrayList<UserVO> UserList=new ArrayList<UserVO>();
 	private ArrayList<HotelVO> HotelList=new ArrayList<HotelVO>();
 	public ResultMessage login(String Id,String password) {

@@ -2,9 +2,10 @@ package businesslogic;
 
 import java.util.ArrayList;
 
+import businesslogicservice.MemberService;
 import vo.MemberVO;
 
-public class MemberServiceImpl {
+public class MemberServiceImpl implements MemberService{
 	ArrayList<MemberVO> MemberList=new ArrayList<MemberVO>();
 	public MemberVO getInfo(String ID) {
 		if(ID=="1111"){
