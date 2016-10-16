@@ -27,7 +27,7 @@ public class OrderDataServiceImpl {
 	
 	public OrderPO  find(String ID) throws RemoteException, Exception {
 		BufferedReader bReader=new BufferedReader(new FileReader(orderFile));
-		OrderPO oPo =new OrderPO(ID);
+		OrderPO oPo =new OrderPO();
 		
 		return oPo;
 	}

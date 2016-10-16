@@ -13,6 +13,9 @@ public class MemberPO {
 		password=p;
 		role=r;
 	}
+	public MemberPO() {
+		// TODO Auto-generated constructor stub
+	}
 	public String getId(){
 		return Id;
 	}

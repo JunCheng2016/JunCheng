@@ -10,6 +10,7 @@ import java.rmi.RemoteException;
 
 import org.omg.PortableServer.IdAssignmentPolicy;
 
+import businesslogic.ResultMessage;
 import po.HotelPO;
 
 public class HotelDataServiceImpl {
@@ -26,20 +27,20 @@ public class HotelDataServiceImpl {
 	
     }
 	
-	public boolean update(String ID, HotelPO po) throws Exception {
+	public ResultMessage update(String ID, HotelPO po) throws Exception {
 		BufferedReader bReader=new  BufferedReader(new FileReader("Hotel.txt"));
 		BufferedWriter bWriter=new BufferedWriter(new FileWriter("Hotel.txt"));
 		if (bReader.readLine().equals(ID)) {
 			
-			return true;
+			return ResultMessage.Success;
 		}
-		return false;
+		return ResultMessage.Failure;
 	}
 	
-	public Boolean add(HotelPO po) throws Exception {
+	public ResultMessage add(HotelPO po) throws Exception {
 		BufferedWriter bWriter=new BufferedWriter(new FileWriter(hotelFile));
 		
-		return true;
+		return ResultMessage.Success;
 	}
 }
 
