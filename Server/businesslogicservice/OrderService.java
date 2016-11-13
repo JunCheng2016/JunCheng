@@ -1,11 +1,9 @@
 package businesslogicservice;
-
-import java.rmi.RemoteException;
 import java.util.ArrayList;
 
 import businesslogic.OrderLimit;
-import businesslogic.ResultMessage;
 import po.OrderPO;
+import po.ResultMessage;
 import vo.OrderVO;
 
 public interface OrderService {
@@ -17,6 +15,16 @@ public interface OrderService {
 	public ResultMessage addOrder(OrderPO po);
 
 	public ResultMessage updateOrder(OrderVO vo);
+
+	public void endGetOrder();
+
+	public void endMakeOrder();
+
+	public void endCancelOrder();
+
+	public void endHandleAbnormalOrder();
+
+	public void endExecuteOrder();
 	
 	
 }

@@ -2,16 +2,11 @@ package data;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
-import java.io.IOException;
-import java.lang.reflect.Member;
-import java.rmi.RemoteException;
 
-import businesslogic.ResultMessage;
 import po.MemberPO;
+import po.ResultMessage;
 
 public class MemberDataServiceImpl {
 

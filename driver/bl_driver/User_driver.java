@@ -1,7 +1,7 @@
 package bl_driver;
 
+import blservice.UserService;
 import businesslogic.UserServiceImpl;
-import businesslogicservice.UserService;
 import vo.HotelVO;
 import vo.MemberVO;
 import vo.UserVO;

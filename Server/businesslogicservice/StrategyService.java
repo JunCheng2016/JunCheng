@@ -1,6 +1,5 @@
 package businesslogicservice;
-
-import businesslogic.ResultMessage;
+import po.ResultMessage;
 import vo.StrategyVO;
 
 public interface StrategyService {

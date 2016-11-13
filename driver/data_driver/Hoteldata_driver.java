@@ -4,9 +4,9 @@ import java.rmi.RemoteException;
 
 import javax.naming.spi.DirStateFactory.Result;
 
+import blservice.HotelService;
 import businesslogic.HotelLimit;
-import businesslogic.ResultMessage;
-import businesslogicservice.HotelService;
+import po.ResultMessage;
 import dataservice.HotelDataService;
 import po.HotelPO;
 

@@ -1,7 +1,7 @@
 package bl_driver;
 
+import blservice.MemberService;
 import businesslogic.MemberServiceImpl;
-import businesslogicservice.MemberService;
 import vo.MemberVO;
 
 public class Member_driver {

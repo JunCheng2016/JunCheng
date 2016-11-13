@@ -1,8 +1,7 @@
 package businesslogicservice;
-
+import po.ResultMessage;
 import java.util.ArrayList;
 
-import businesslogic.ResultMessage;
 import vo.MemberVO;
 
 public interface MemberService {

@@ -7,10 +7,9 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.rmi.RemoteException;
-
+import po.ResultMessage;
 import org.omg.PortableServer.IdAssignmentPolicy;
 
-import businesslogic.ResultMessage;
 import po.HotelPO;
 
 public class HotelDataServiceImpl {

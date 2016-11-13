@@ -1,9 +1,8 @@
 package businesslogicservice;
-
+import po.ResultMessage;
 import java.util.ArrayList;
 
 import businesslogic.HotelLimit;
-import businesslogic.ResultMessage;
 import po.HotelPO;
 import vo.HotelVO;
 

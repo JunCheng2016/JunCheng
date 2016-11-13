@@ -2,7 +2,7 @@ package businesslogicservice;
 
 
 
-import businesslogic.ResultMessage;
+import po.ResultMessage;
 import vo.HotelVO;
 import vo.MemberVO;
 import vo.UserVO;

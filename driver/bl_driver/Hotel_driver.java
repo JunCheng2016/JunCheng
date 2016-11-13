@@ -1,8 +1,8 @@
 package bl_driver;
 
+import blservice.HotelService;
 import businesslogic.HotelLimit;
 import businesslogic.HotelServiceImpl;
-import businesslogicservice.HotelService;
 import po.HotelPO;
 
 public class Hotel_driver {

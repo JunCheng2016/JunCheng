@@ -1,6 +1,6 @@
 package data_driver;
 
-import businesslogic.ResultMessage;
+import po.ResultMessage;
 import dataservice.MemberDataService;
 import po.MemberPO;
 

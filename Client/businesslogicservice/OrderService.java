@@ -12,6 +12,8 @@ public interface OrderService {
 	
 	public ArrayList<OrderVO> getOrder(OrderLimit limit);	
 	
+	public void endGetOrder();
+	
 	public OrderPO getInfo(String ID);
 	
 	public ResultMessage addOrder(OrderPO po);
